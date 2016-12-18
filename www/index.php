@@ -34,10 +34,43 @@ header('Content-Type: text/html; charset=utf-8]')?>
             <div class="form-wrap">
                 <a href="#" id="registration">Регистрация</a>
                 <button type="submit" id="enter">Войти</button>
-            </div>   
+            </div>
         </form>
     </div>
-
+    <div class="row">
+        <div class="main-title">Какие возможности предоставляет сервис</div>
+        <div class="title">Для родителей</div>
+        <div class="row">
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/info.png" />
+                <div class="block-text">Просматривать информацию о множестве детских садов в одном месте</div>
+            </div>
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/zayavka.png" />
+                <div class="block-text">Подать заявку в детский сад онлайн</div>
+            </div>
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/docs.png" />
+                <div class="block-text">Прикреплять все необходимые документы в электронном виде</div>
+            </div>
+        </div>
+        <div class="title">Для детских садов</div>
+        <div class="row">
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/info_rod.png" />
+                <div class="block-text">Предоставить информацию о себе большему количеству родителей</div>
+            </div>
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/place.png" />
+                <div class="block-text">Опреративно менять информацию о количестве свободных мест</div>
+            </div>
+            <div class="col-md-4 info-block">
+                <img src="frontend/img/online.png" />
+                <div class="block-text">Рассматривать заявки на поступление он-лайн</div>
+            </div>
+        </div>
+    </div>
+    <div class="row top-place"></div>
 </div>
 </body>
 </html>

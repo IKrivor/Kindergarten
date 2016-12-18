@@ -47,3 +47,28 @@ button#enter {
 a#registration {
     color: #3a9aa0;
 }
+.main-title {
+    text-align: center;
+    padding: 30px 0 10px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #5cd2e9;
+    text-shadow: #427e82 1px 1px 0, #427e82 -1px -1px 0, #427e82 -1px 1px 0, #427e82 1px -1px 0;
+}
+.title {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #a3ec40;
+    font-weight: 600;
+    text-shadow: #7faf3f 1px 1px 0, #7faf3f -1px -1px 0, #7faf3f -1px 1px 0, #7faf3f 1px -1px 0;
+}
+.info-block {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 16px;
+    color: #333;
+}
+.block-text {
+    padding-top: 10px;
+}
