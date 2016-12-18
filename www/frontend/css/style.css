@@ -1,0 +1,49 @@
+body {
+    font-family: cursive;
+}
+.row.top-place {
+    height: 75px;
+    background-color: #36c7d0;
+}
+.row.main-place {
+    height: 500px;
+    background: url(../img/main.png);
+    background-size: cover;
+}
+form#main-form {
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    width: 20%;
+    background-color: rgba(255,255,255,0.7);
+    padding: 2%;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    font-size: 15px;
+}
+.form-wrap {
+    padding: 4px 0;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #afa4a4;
+    padding-left: 7px;
+}
+select#user-type {
+    padding-left: 1px;
+}
+button#enter {
+    width: 80px;
+    float: right;
+    background-color: rgb(49, 214, 224);
+    color: white;
+    border-color: #2ec3cc;
+}
+a#registration {
+    color: #3a9aa0;
+}
