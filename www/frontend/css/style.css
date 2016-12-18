@@ -53,14 +53,14 @@ a#registration {
     padding: 30px 0 10px;
     font-size: 35px;
     font-weight: 600;
-    color: #5cd2e9;
+    color: #29dcff;
     text-shadow: #427e82 1px 1px 0, #427e82 -1px -1px 0, #427e82 -1px 1px 0, #427e82 1px -1px 0;
 }
 .title {
     padding: 20px;
     text-align: center;
     font-size: 25px;
-    color: #a3ec40;
+    color: #a3ff26;
     font-weight: 600;
     text-shadow: #7faf3f 1px 1px 0, #7faf3f -1px -1px 0, #7faf3f -1px 1px 0, #7faf3f 1px -1px 0;
 }
@@ -77,4 +77,33 @@ div#rights {
     color: white;
     padding: 28px 0 0 30px;
     font-size: 16px;
+}
+
+/* Регитсрация */
+div#choice {
+    text-align: center;
+}
+div#registr-place {
+    width: 600px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 2px dashed #b3afaf;
+}
+.inp-wrap {
+    padding-top: 10px;
+}
+input#reg-sad-tel {
+    margin-top: -4px;
+}
+input#uploader {
+    width: 370px;
+    float: right;
+    padding-top: 3px;
+}
+label#label-lic {
+    font-weight: normal;
+    float: left;
+    font-size: 15px;
+    padding-top: 3px;
+    margin-bottom: 16px;
 }

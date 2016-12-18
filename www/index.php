@@ -26,13 +26,13 @@ header('Content-Type: text/html; charset=utf-8]')?>
                 </select>
             </div>
             <div class="form-wrap">
-                <input type="text" id="login" name="login" placeholder="Логин" />
+                <input type="text" id="enter-login" name="enter-login" placeholder="Логин" />
             </div>
             <div class="form-wrap">
-                <input type="password" id="pass" name="pass" placeholder="Пароль" />
+                <input type="password" id="enter-pass" name="enter-pass" placeholder="Пароль" />
             </div>
             <div class="form-wrap">
-                <a href="#" id="registration">Регистрация</a>
+                <a href="/registration.php" id="registration">Регистрация</a>
                 <button type="submit" id="enter">Войти</button>
             </div>
         </form>
