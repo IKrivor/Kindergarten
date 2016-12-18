@@ -70,7 +70,11 @@ header('Content-Type: text/html; charset=utf-8]')?>
             </div>
         </div>
     </div>
-    <div class="row top-place"></div>
+    <div class="row top-place">
+        <div id="rights">
+            Все права защищены &copy <?php echo date('Y');?>
+        </div>
+    </div>
 </div>
 </body>
 </html>
