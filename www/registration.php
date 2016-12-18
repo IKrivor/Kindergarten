@@ -54,13 +54,34 @@ header('Content-Type: text/html; charset=utf-8]')?>
                 <div class="inp-wrap">
                     <input type="password" id="reg-sad-repass" name="reg-sad-repass" placeholder="Повторите пароль" />
                 </div>
-
-
-
-
+                <div class="inp-wrap">
+                    <button type="submit" class="reg" id="sad-reg">Зарегистрироваться</button>
+                </div>
             </div>
 
-            <div id="parent-choice"></div>
+            <div id="parent-choice" class="hidden">
+                <div class="inp-wrap">
+                    <input type="text" id="reg-par-lastname" name="reg-par-lastname" placeholder="Фамилия" />
+                </div>
+                <div class="inp-wrap">
+                    <input type="text" id="reg-par-name" name="reg-par-name" placeholder="Имя" />
+                </div>
+                <div class="inp-wrap">
+                    <input type="text" id="reg-par-patr" name="reg-par-patr" placeholder="Отчество" />
+                </div>
+                <div class="inp-wrap">
+                    <input type="text" id="reg-par-login" name="reg-par-login" placeholder="Логин" />
+                </div>
+                <div class="inp-wrap">
+                    <input type="password" id="reg-par-pass" name="reg-par-pass" placeholder="Пароль" />
+                </div>
+                <div class="inp-wrap">
+                    <input type="password" id="reg-par-repass" name="reg-par-repass" placeholder="Повторите пароль" />
+                </div>
+                <div class="inp-wrap">
+                    <button type="submit" class="reg" id="par-reg">Зарегистрироваться</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row top-place">

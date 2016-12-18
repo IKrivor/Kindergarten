@@ -91,6 +91,7 @@ div#registr-place {
 }
 .inp-wrap {
     padding-top: 10px;
+    text-align: center;
 }
 input#reg-sad-tel {
     margin-top: -4px;
@@ -106,4 +107,8 @@ label#label-lic {
     font-size: 15px;
     padding-top: 3px;
     margin-bottom: 16px;
+}
+button.reg {
+    width: 200px;
+    background-color: #a7ec49;
 }
