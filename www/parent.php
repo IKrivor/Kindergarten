@@ -15,14 +15,17 @@ header('Content-Type: text/html; charset=utf-8]')?>
     <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="top-menu">
-    <div class="menu-item" id="info-menu">Личная информация</div>
-    <div class="menu-item" id="children-menu">Дети</div>
-    <div class="menu-item" id="sady-menu">Сады</div>
-    <div class="menu-item" id="zayavki-menu">Заявки</div>
-    <div class="menu-item" id="exit">Выход</div>
+<div class="container">
+    <div class="top-menu">
+        <div class="menu-item" id="info-menu">Личная информация</div>
+        <div class="menu-item" id="children-menu">Дети</div>
+        <div class="menu-item" id="sady-menu">Сады</div>
+        <div class="menu-item" id="zayavki-menu">Заявки</div>
+        <div class="menu-item" id="exit">Выход</div>
+    </div>
+
+    <div id="parent-container"></div>
 </div>
 
-<div id="parent-container"></div>
 </body>
 </html>

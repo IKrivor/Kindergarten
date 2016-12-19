@@ -134,3 +134,35 @@ div#exit {
     padding-right: 20px;
 }
 
+/* О саде */
+div#no_img {
+    width: 180px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #d7dce0;
+    text-align: center;
+}
+img#img_no {
+    width: 70px;
+    margin-top: 59px;
+}
+input#uploader-main-photo {
+    width: 80%;
+    float: right;
+    padding-top: 3px;
+}
+input#uploader-photo {
+    width: 500px;
+    float: right;
+    padding-top: 3px;
+}
+div#choice-photo {
+    width: 800px;
+    margin: 0 auto;
+}
+button#load-photo {
+    width: 100px;
+    float: right;
+    background-color: #a7ec49;
+    margin-left: 15px;
+}
