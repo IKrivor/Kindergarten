@@ -134,6 +134,25 @@ div#exit {
     padding-right: 20px;
 }
 
+/* Кнопки */
+.button-place {
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.button-place button {
+    width: auto;
+}
+button.add-but {
+    background-color: #a7ec49;
+}
+button.update-but {
+    background-color: #ebec49;
+}
+button.remove-but {
+    background-color: #ec8349;
+}
+
 /* О саде */
 div#no_img {
     width: 180px;
@@ -165,4 +184,45 @@ button#load-photo {
     float: right;
     background-color: #a7ec49;
     margin-left: 15px;
+}
+table {
+    background-color: transparent;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+/* Группы */
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:26px;
+    height:26px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/checkbox.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../img/checkbox.png) -26px top no-repeat;
+}
+th.t-gr-name {
+    text-align: center;
+}
+td.t-gr {
+    text-align: center;
+}
+table#table-groups {
+    width: 59%;
+    margin: 0 0 0 15px;
+}
+th.t-gr-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.t-num{
+    cursor: pointer;
 }

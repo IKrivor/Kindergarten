@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/frontend/templates/O_sade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/frontend/img/checkbox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/frontend/templates/Groups.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/css/style.css" afterPath="$PROJECT_DIR$/www/frontend/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/kindergarten.php" afterPath="$PROJECT_DIR$/www/kindergarten.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/parent.php" afterPath="$PROJECT_DIR$/www/parent.php" />
     </list>
     <ignored path="Kindergarten.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,21 +57,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="O_sade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="O_sade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/O_sade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Groups.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/frontend/templates/Groups.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="546">
-              <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+              <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -118,8 +127,9 @@
         <option value="$PROJECT_DIR$/www/frontend/js/registr.js" />
         <option value="$PROJECT_DIR$/www/kindergarten.php" />
         <option value="$PROJECT_DIR$/www/parent.php" />
-        <option value="$PROJECT_DIR$/www/frontend/css/style.css" />
         <option value="$PROJECT_DIR$/www/frontend/templates/O_sade.php" />
+        <option value="$PROJECT_DIR$/www/frontend/templates/Groups.php" />
+        <option value="$PROJECT_DIR$/www/frontend/css/style.css" />
       </list>
     </option>
   </component>
@@ -203,6 +213,50 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -228,6 +282,9 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\home\Kindergarten\www\frontend\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Z:\home\Kindergarten\www" />
     </key>
@@ -283,12 +340,12 @@
       <workItem from="1481919826533" duration="565000" />
       <workItem from="1481945802995" duration="2906000" />
       <workItem from="1482093793424" duration="8985000" />
-      <workItem from="1482161451678" duration="9544000" />
+      <workItem from="1482161451678" duration="11932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29634000" />
+    <option name="totallyTimeSpent" value="32022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -329,13 +386,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/featuredreview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/filter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29">
@@ -647,18 +697,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/O_sade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+        <state relative-caret-position="461">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/templates/O_sade.php">
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Groups.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="376">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
           <folding />
         </state>
       </provider>
