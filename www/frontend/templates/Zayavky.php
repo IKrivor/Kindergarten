@@ -25,6 +25,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
     </div>
 
     <div id="zayavky-container">
+        <div class="title">Заявки</div>
         <div class="row">
             <table id="table-zayavky">
                 <thead>

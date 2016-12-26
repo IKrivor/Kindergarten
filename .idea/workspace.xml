@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/css/style.css" afterPath="$PROJECT_DIR$/www/frontend/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/templates/Kids.php" afterPath="$PROJECT_DIR$/www/frontend/templates/Kids.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php" afterPath="$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/templates/Sads_category.php" afterPath="$PROJECT_DIR$/www/frontend/templates/Sads_category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/templates/Sads_single.php" afterPath="$PROJECT_DIR$/www/frontend/templates/Sads_single.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/templates/Zayavky.php" afterPath="$PROJECT_DIR$/www/frontend/templates/Zayavky.php" />
     </list>
     <ignored path="Kindergarten.iws" />
@@ -26,21 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+            <state relative-caret-position="500">
+              <caret line="325" column="1" selection-start-line="325" selection-start-column="1" selection-end-line="325" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
+      <file leaf-file-name="Sads_single.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="290" column="22" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+            <state relative-caret-position="444">
+              <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -49,18 +53,8 @@
       <file leaf-file-name="Sads_category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-287">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sads_single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="87">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -69,8 +63,8 @@
       <file leaf-file-name="Zayavky.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Zayavky.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="26" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="7" />
+            <state relative-caret-position="221">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -79,8 +73,8 @@
       <file leaf-file-name="Private_parents_data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="23" selection-end-column="52" />
+            <state relative-caret-position="291">
+              <caret line="29" column="54" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -89,8 +83,8 @@
       <file leaf-file-name="Kids.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Kids.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -140,11 +134,11 @@
         <option value="$PROJECT_DIR$/www/frontend/templates/Group.php" />
         <option value="$PROJECT_DIR$/www/index.php" />
         <option value="$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php" />
-        <option value="$PROJECT_DIR$/www/frontend/templates/Kids.php" />
-        <option value="$PROJECT_DIR$/www/frontend/templates/Zayavky.php" />
-        <option value="$PROJECT_DIR$/www/frontend/templates/Sads_single.php" />
         <option value="$PROJECT_DIR$/www/frontend/templates/Sads_category.php" />
+        <option value="$PROJECT_DIR$/www/frontend/templates/Zayavky.php" />
+        <option value="$PROJECT_DIR$/www/frontend/templates/Kids.php" />
         <option value="$PROJECT_DIR$/www/frontend/css/style.css" />
+        <option value="$PROJECT_DIR$/www/frontend/templates/Sads_single.php" />
       </list>
     </option>
   </component>
@@ -357,12 +351,12 @@
       <workItem from="1482093793424" duration="8985000" />
       <workItem from="1482161451678" duration="13814000" />
       <workItem from="1482751112010" duration="95000" />
-      <workItem from="1482751228894" duration="12805000" />
+      <workItem from="1482751228894" duration="17531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46804000" />
+    <option name="totallyTimeSpent" value="51530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -520,38 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="23" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Kids.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Zayavky.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -560,10 +522,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Kids.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="87">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Zayavky.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -571,7 +557,15 @@
     <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
-          <caret line="290" column="22" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+          <caret line="325" column="1" selection-start-line="325" selection-start-column="1" selection-end-line="325" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
           <folding />
         </state>
       </provider>

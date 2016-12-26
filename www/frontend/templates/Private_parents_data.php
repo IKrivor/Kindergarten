@@ -28,8 +28,6 @@ header('Content-Type: text/html; charset=utf-8]')?>
         <div class="row">
             <div class="dashed-place">
                 <div class="title">Личные данные</div>
-
-
                 <div class="parents-inputs">
                     <div class="inp-wrap">
                         <input type="text" id="sad-name" name="parents-fam" placeholder="Фамилия" />

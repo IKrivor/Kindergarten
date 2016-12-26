@@ -25,11 +25,12 @@ header('Content-Type: text/html; charset=utf-8]')?>
     </div>
 
     <div id="kids-container">
+        <div class="title">Дети</div>
         <div class="row">
             <div class="button-place">
-                <button id="add-kidkid" class="add-but">Добавить</button>
-                <button id="update-kidkid" class="update-but">Редактировать</button>
-                <button id="remove-kidkid" class="remove-but">Удалить</button>
+                <button id="add-kid" class="add-but">Добавить</button>
+                <button id="update-kid" class="update-but">Редактировать</button>
+                <button id="remove-kid" class="remove-but">Удалить</button>
             </div>
             <table id="table-groups">
                 <thead>

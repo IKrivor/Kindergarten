@@ -25,6 +25,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
     </div>
 
     <div id="sads-category-container">
+        <div class="title">Сады</div>
         <div class="col-md-6 sads-category">
             <div class="sads-category-title-and-poster">
                 <div class="sads-category-title">Солнышко</div>
