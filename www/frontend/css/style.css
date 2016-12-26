@@ -6,6 +6,12 @@ body {
     height: 75px;
     background-color: #36c7d0;
 }
+.logo img {
+    width: 30%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 1em;
+}
 .row.main-place {
     height: 500px;
     background: url(../img/main.png);

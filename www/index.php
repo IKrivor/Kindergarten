@@ -16,7 +16,11 @@ header('Content-Type: text/html; charset=utf-8]')?>
 </head>
 <body>
 <div class="container">
-    <div class="row top-place"></div>
+    <div class="row top-place">
+        <div class="logo">
+            <img src="frontend/img/logo.png">
+        </div>
+    </div>
     <div class="row main-place">
         <form id="main-form">
             <div class="form-wrap">
