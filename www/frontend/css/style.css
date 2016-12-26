@@ -123,12 +123,12 @@ div#registr-place {
 input#reg-sad-tel {
     margin-top: -4px;
 }
-input#uploader {
+input#uploader, input#uploader-pass {
     width: 370px;
     float: right;
     padding-top: 3px;
 }
-label#label-lic {
+label#label-lic, label#label-pass {
     font-weight: normal;
     float: left;
     font-size: 15px;
@@ -195,7 +195,7 @@ img#img_no {
     width: 70px;
     margin-top: 59px;
 }
-input#uploader-main-photo {
+input#uploader-main-photo, input#uploader-pass {
     width: 80%;
     float: right;
     padding-top: 3px;
@@ -255,4 +255,9 @@ th.t-gr-name, th.t-waiting-name {
 }
 .t-num{
     cursor: pointer;
+}
+.parents-inputs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
