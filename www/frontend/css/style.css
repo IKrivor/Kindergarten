@@ -7,10 +7,31 @@ body {
     background-color: #36c7d0;
 }
 .logo img {
-    width: 30%;
+    width: 75%;
     height: auto;
     padding-top: 20px;
     padding-left: 1em;
+}
+.mail-in-right-side {
+    display: inline-block;
+    float: right;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+.mail-in-right-side img, p, .logo {
+    display: inline-block;
+}
+.mail-in-right-side p a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.mail-in-right-side img {
+    width: 30px;
+}
+.mail-in-right-side p {
+    margin: 0;
+    vertical-align: top;
 }
 .row.main-place {
     height: 500px;

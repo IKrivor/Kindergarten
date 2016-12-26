@@ -20,6 +20,10 @@ header('Content-Type: text/html; charset=utf-8]')?>
         <div class="logo">
             <img src="frontend/img/logo.png">
         </div>
+        <div class="mail-in-right-side">
+            <img src="frontend/img/mail.png">
+            <p><a href="mailto:support@detskiesady.ru">support@detskiesady.ru</a></p>
+        </div>
     </div>
     <div class="row main-place">
         <form id="main-form">
