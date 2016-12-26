@@ -237,17 +237,17 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background:url(../img/checkbox.png) -26px top no-repeat;
 }
-th.t-gr-name {
+th.t-gr-name, th.t-kid-name {
     text-align: center;
 }
-td.t-gr, td.t-waiting {
+td.t-gr, td.t-kid, td.t-waiting, td.t-zayavky {
     text-align: center;
 }
 table#table-groups {
     width: 59%;
     margin: 0 0 0 15px;
 }
-th.t-gr-name, th.t-waiting-name {
+th.t-gr-name, th.t-kid-name, th.t-waiting-name, th.t-zayavky-name {
     text-align: center;
     font-size: 16px;
     font-weight: normal;
@@ -263,9 +263,9 @@ th.t-gr-name, th.t-waiting-name {
     margin-right: auto;
 }
 table#table-groups {
-    width: 92%;
+    width: 96%;
     margin: 0 0 0 15px;
 }
-.t-gr img {
+.t-gr img, .t-kid img {
     width: 12%;
 }
