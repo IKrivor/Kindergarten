@@ -252,6 +252,7 @@ th.t-gr-name, th.t-waiting-name {
     font-size: 16px;
     font-weight: normal;
     padding-bottom: 10px;
+    width: 176px;
 }
 .t-num{
     cursor: pointer;
@@ -260,4 +261,11 @@ th.t-gr-name, th.t-waiting-name {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+table#table-groups {
+    width: 92%;
+    margin: 0 0 0 15px;
+}
+.t-gr img {
+    width: 12%;
 }
