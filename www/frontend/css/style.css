@@ -269,3 +269,24 @@ table#table-groups {
 .t-gr img, .t-kid img {
     width: 12%;
 }
+#zayavky-container{
+    padding-top: 15px;
+}
+.sads-category-title-and-poster, .sads-category-data {
+    display: inline-block;
+}
+.sads-category-title {
+    text-align: center;
+}
+.sads-category-adress-title, .sads-category-time-work-title, .sads-category-contacts-title{
+    font-weight: bold;
+}
+.sads-category-data {
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: initial;
+}
+#sads-category-container{
+    text-align: center;
+}

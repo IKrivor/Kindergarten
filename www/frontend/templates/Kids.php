@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
         <div class="menu-item" id="exit">Выход</div>
     </div>
 
-    <div id="sad-container">
+    <div id="kids-container">
         <div class="row">
             <div class="button-place">
                 <button id="add-kidkid" class="add-but">Добавить</button>
