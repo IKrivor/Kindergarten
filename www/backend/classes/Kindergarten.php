@@ -8,6 +8,7 @@ class Kindergarten
     var $telephone;
     var $login;
     var $password;
+    var $mode;
     var $license_id;
 
     function Kindergarten($id,$name,$address,$telephone,$login,$password,$license_id){
