@@ -7,12 +7,12 @@ header('Content-Type: text/html; charset=utf-8]')?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kindergarten</title>
 
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="frontend/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/css/style.css" rel="stylesheet">
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -28,7 +28,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
                 <div class="title">Основная информация</div>
                 <div class="col-md-4">
                     <div id="no_img">
-                        <img src="../img/photo-camera.png" id="img_no"/>
+                        <img src="frontend/img/photo-camera.png" id="img_no"/>
                     </div>
                 </div>
 
