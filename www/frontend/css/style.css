@@ -302,6 +302,7 @@ table#table-groups {
 }
 .col-md-6.description {
     padding-top: 20px;
+    text-align: justify;
 }
 #sads-single-join-group-container {
     padding-top: 20px;
