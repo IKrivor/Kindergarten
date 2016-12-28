@@ -13,6 +13,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
+    <script src="frontend/js/parent.js"></script>
 </head>
 <body>
 <div class="container">

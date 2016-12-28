@@ -172,12 +172,15 @@ div#exit {
 }
 button.add-but {
     background-color: #a7ec49;
+    margin-right: 7px;
 }
 button.update-but {
     background-color: #ebec49;
+    margin-right: 7px;
 }
 button.remove-but {
     background-color: #ec8349;
+    margin-right: 7px;
 }
 button.active-but {
     background-color: #a8e3e6;
