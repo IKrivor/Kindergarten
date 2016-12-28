@@ -14,6 +14,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
     <script src="frontend/js/registr.js"></script>
+    <script src="frontend/js/cookie.js"></script>
 </head>
 <body>
 <div class="container">

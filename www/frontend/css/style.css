@@ -328,3 +328,13 @@ td.t-join-group {
 table#table-join-group {
     border: 1px solid #a09e9e;
 }
+
+button#sad_save, #gr_save, #gr_update {
+    width: 100px;
+    background-color: #a7ec49;
+}
+
+.gr-form {
+    width: 60%;
+    margin: 0 auto;
+}
