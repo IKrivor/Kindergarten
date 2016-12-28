@@ -1,17 +1,17 @@
 <?php
 require_once "functions/connectDB.php";
 
-function addSad($name, $address, $tel, $login, $pass){
+function addParent($lname, $fname, $patr, $login, $pass){
     global $mysqli;
     connectDB();
-    $result = $mysqli->query("INSERT INTO `kindergarten` (`kin_name`, `kin_address`, `kin_tel`, `kin_login`, `kin_pass`) VALUES
-    ('".$name."', '".$address."', '".$tel."', '".$login."', '".md5($pass)."')");
+    $result = $mysqli->query("INSERT INTO `parent` (`par_lastName`, `par_firstName`, `par_patronymic`, `par_login`, `par_pass`) VALUES
+    ('".$lname."', '".$fname."', '".$patr."', '".$login."', '".md5($pass)."')");
     closeDB();
     return $result;
 }
 
-if($_POST["sad_pass"] == $_POST["sad_repass"]){
-    $success = addSad($_POST["sad_name"], $_POST["sad_address"], $_POST["sad_tel"], $_POST["sad_login"], $_POST["sad_pass"]);
+if($_POST["par_pass"] == $_POST["par_repass"]){
+    $success = addParent($_POST["par_surname"], $_POST["par_name"], $_POST["par_patr"], $_POST["par_login"], $_POST["par_pass"]);
     if($success) {
         echo "1";//успешно
     }
