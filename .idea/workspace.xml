@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/frontend/css/style.css" afterPath="$PROJECT_DIR$/www/frontend/css/style.css" />
-    </list>
+
+    <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="" />
+
     <ignored path="Kindergarten.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -15,6 +15,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharPath>D:\composer.phar</pharPath>
+    <phpPath>D:\php\php.exe</phpPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -24,26 +28,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+
+      <file leaf-file-name="registr-parent.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/backend/registr-parent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="125" selection-start-line="13" selection-start-column="125" selection-end-line="13" selection-end-column="125" />
+              <folding>
+                <marker date="1482941660758" expanded="true" signature="172:354" placeholder="INSERT INTO `parent`... " />
+              </folding>
+
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
               <caret line="304" column="24" selection-start-line="304" selection-start-column="24" selection-end-line="304" selection-end-column="24" />
               <folding />
+
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="registr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/frontend/js/registr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="66" column="28" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="28" />
+
       <file leaf-file-name="Sads_single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
               <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="parent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/parent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+
       <file leaf-file-name="Sads_category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_category.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,13 +109,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-    </leaf>
-  </component>
+   
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -119,11 +149,14 @@
         <option value="$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_checkout_cart.php/cart.php" />
         <option value="$PROJECT_DIR$/www/frontend/blocks/footer.php" />
         <option value="$PROJECT_DIR$/www/frontend/pages/registration.php" />
+
+        <option value="$PROJECT_DIR$/www/index.php" />
+
         <option value="$PROJECT_DIR$/www/registration.php" />
         <option value="$PROJECT_DIR$/www/frontend/js/registr.js" />
+
         <option value="$PROJECT_DIR$/www/kindergarten.php" />
         <option value="$PROJECT_DIR$/www/parent.php" />
-        <option value="$PROJECT_DIR$/www/frontend/templates/O_sade.php" />
         <option value="$PROJECT_DIR$/www/frontend/templates/Groups.php" />
         <option value="$PROJECT_DIR$/www/frontend/templates/Group.php" />
         <option value="$PROJECT_DIR$/www/index.php" />
@@ -133,6 +166,22 @@
         <option value="$PROJECT_DIR$/www/frontend/templates/Kids.php" />
         <option value="$PROJECT_DIR$/www/frontend/templates/Sads_single.php" />
         <option value="$PROJECT_DIR$/www/frontend/css/style.css" />
+        <option value="$PROJECT_DIR$/www/backend/classes/License.php" />
+        <option value="$PROJECT_DIR$/www/backend/classes/Father.php" />
+        <option value="$PROJECT_DIR$/www/backend/classes/Passport.php" />
+        <option value="$PROJECT_DIR$/www/backend/classes/Kindergarten.php" />
+        <option value="$PROJECT_DIR$/www/backend/functions/connectDB.php" />
+        <option value="$PROJECT_DIR$/www/registration.php" />
+        <option value="$PROJECT_DIR$/www/backend/registr.php" />
+        <option value="$PROJECT_DIR$/www/frontend/templates/O_sade.php" />
+        <option value="$PROJECT_DIR$/www/sad_page.php" />
+        <option value="$PROJECT_DIR$/www/backend/autoload.php" />
+        <option value="$PROJECT_DIR$/www/backend/registr-sad.php" />
+        <option value="$PROJECT_DIR$/www/backend/tests/addSadTest.php" />
+        <option value="$PROJECT_DIR$/www/backend/tests/connectDB.php" />
+        <option value="$PROJECT_DIR$/www/backend/tests/registr-sad.php" />
+        <option value="$PROJECT_DIR$/www/frontend/js/registr.js" />
+        <option value="$PROJECT_DIR$/www/backend/registr-parent.php" />
       </list>
     </option>
   </component>
@@ -144,12 +193,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP (1)" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,6 +243,16 @@
               <option name="myItemId" value="Kindergarten" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -214,39 +272,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kindergarten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kindergarten" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kindergarten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -277,15 +303,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/php/php.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\home\Kindergarten\www\backend\tests" />
+      <recent name="Z:\home\Kindergarten\www\backend" />
+      <recent name="Z:\home\Kindergarten\www\backend\functions" />
       <recent name="Z:\home\Kindergarten\www\frontend\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -323,6 +354,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="unittests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/www/backend/tests" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.unittests" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -343,20 +381,43 @@
       <workItem from="1481919826533" duration="565000" />
       <workItem from="1481945802995" duration="2906000" />
       <workItem from="1482093793424" duration="8985000" />
-      <workItem from="1482161451678" duration="13814000" />
+
+      <workItem from="1482161451678" duration="12840000" />
+      <workItem from="1482262170824" duration="1383000" />
+      <workItem from="1482796692675" duration="16416000" />
+      <workItem from="1482822845254" duration="630000" />
+      <workItem from="1482823747629" duration="4378000" />
+      <workItem from="1482939293489" duration="3051000" />
+
       <workItem from="1482751112010" duration="95000" />
       <workItem from="1482751228894" duration="17791000" />
+
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51790000" />
+  <component name="TestHistory">
+    <history-entry file="unittests - 2016.12.27 at 11h 51m 13s.xml">
+      <configuration name="unittests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+
+    <option name="totallyTimeSpent" value="62700000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1382" height="728" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+
+    <option name="totallyTimeSpent" value="51790000" />
+
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -364,14 +425,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -391,29 +458,106 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/language.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/latest.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/manufacturerabc.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/map.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/mattimeobanner.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/mattimeocategory.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/mattimeomenucategory.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/mattimeotheme.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/news.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/option_filter.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/price_filter.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/product_groups.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/quick_order_pro.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/rcategory.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/slideshow.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/spcallmeback.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/special.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/store.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/video.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/webme_categories_at_homepage.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/welcome.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_product_category.php/category.php" />
-    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_product_product.php/product.php" />
+
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/option_filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/price_filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/product_groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/quick_order_pro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/rcategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/slideshow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/spcallmeback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/special.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/webme_categories_at_homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_module_+.php/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_product_category.php/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="262" column="17" selection-start-line="262" selection-start-column="17" selection-end-line="262" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_controller_product_product.php/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="418" column="108" selection-start-line="418" selection-start-column="108" selection-end-line="418" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_view_theme_template_product_product.tpl/category.tpl" />
     <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/catalog_view_theme_template_product_product.tpl/product.tpl" />
     <entry file="file://$USER_HOME$/Desktop/техподдержка/бэкапы файлов/system_library_cart.php/cart.php" />
@@ -456,27 +600,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/frontend/blocks/footer.php" />
     <entry file="file://$PROJECT_DIR$/www/frontend/blocks/header.php" />
-    <entry file="file://$PROJECT_DIR$/www/frontend/js/registr.js">
+    <entry file="file://$PROJECT_DIR$/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+
+        <state relative-caret-position="-34">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/parent.php">
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Groups.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+
+        <state relative-caret-position="544">
+          <caret line="32" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/kindergarten.php">
+    <entry file="file://$PROJECT_DIR$/www/frontend/templates/Group.php">
       <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="833">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+
         <state relative-caret-position="425">
           <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
-      </provider>
-    </entry>
+   
     <entry file="file://$PROJECT_DIR$/www/registration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -505,49 +656,180 @@
         <state relative-caret-position="1037">
           <caret line="61" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="7" />
           <folding />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.php">
+    <entry file="file://$PROJECT_DIR$/www/backend/classes/Father.php">
       <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="289">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/classes/License.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/dbDesigner.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/classes/Passport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/classes/Kindergarten.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="83" column="65" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="phar://$PROJECT_DIR$/www/phpunit.phar/phpunit/Framework/TestCase.php" />
+    <entry file="file://$PROJECT_DIR$/www/backend/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/functions/connectDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+
         <state relative-caret-position="255">
           <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
           <folding />
         </state>
-      </provider>
-    </entry>
+
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Private_parents_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="29" column="54" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="54" />
+
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Kids.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding />
+
+        <state relative-caret-position="530">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/tests/registr-sad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <marker date="1482940955011" expanded="true" signature="154:329" placeholder="INSERT INTO `kindergarten`... " />
+            <marker date="1482940955011" expanded="true" signature="377:554" placeholder="SELECT * FRO... mytable" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/tests/connectDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+
+        <state relative-caret-position="187">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+
+          <folding />
+        </state>
+
+
+    <entry file="file://$PROJECT_DIR$/www/backend/tests/addSadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#7#86#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/backend/registr-sad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1482813539419" expanded="true" signature="169:302" placeholder="INSERT INTO `kindergarten`... " />
+            <marker date="1482813539419" expanded="true" signature="169:344" placeholder="INSERT INTO `kindergarten`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/sad_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+
           <folding />
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/www/kindergarten.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Zayavky.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+
           <folding />
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/www/parent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/frontend/js/registr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="28" />
+
     <entry file="file://$PROJECT_DIR$/www/frontend/templates/Sads_single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -560,11 +842,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="304" column="24" selection-start-line="304" selection-start-column="24" selection-end-line="304" selection-end-column="24" />
+
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
+    <entry file="file://$PROJECT_DIR$/www/backend/registr-parent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="125" selection-start-line="13" selection-start-column="125" selection-end-line="13" selection-end-column="125" />
+          <folding>
+            <marker date="1482941660758" expanded="true" signature="172:354" placeholder="INSERT INTO `parent`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">
@@ -580,4 +873,3 @@
       </state>
     </states>
   </component>
-</project>

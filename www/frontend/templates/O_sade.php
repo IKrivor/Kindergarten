@@ -46,6 +46,9 @@ header('Content-Type: text/html; charset=utf-8]')?>
                         <textarea id="sad-regim" name="sad-regim" placeholder="Режим работы детского сада"></textarea>
                     </div>
                     <div class="inp-wrap">
+                        <textarea id="sad-description" name="sad-description" placeholder="Описание детского сада"></textarea>
+                    </div>
+                    <div class="inp-wrap">
                         <label id="label-lic">Главное фото</label>
                         <input type="file" name="uploader-main-photo" id="uploader-main-photo" placeholder="Главное фото детского сада">
                     </div>

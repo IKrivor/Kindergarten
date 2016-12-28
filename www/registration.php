@@ -30,7 +30,7 @@ header('Content-Type: text/html; charset=utf-8]')?>
                 </select>
             </div>
 
-            <div id="kinder-choice" class="hidden">
+            <form id="kinder-choice" class="hidden">
                 <div class="inp-wrap">
                     <input type="text" id="reg-sad-name" name="reg-sad-name" placeholder="Название детского сада" />
                 </div>
@@ -40,10 +40,10 @@ header('Content-Type: text/html; charset=utf-8]')?>
                 <div class="inp-wrap">
                     <input type="text" id="reg-sad-tel" name="reg-sad-tel" placeholder="Телефон" />
                 </div>
-                <div class="inp-wrap">
-                    <label id="label-lic">Лицензия детского сада</label>
-                    <input type="file" name="uploader" id="uploader" placeholder="Лицензия детского сада">
-                </div>
+<!--                <div class="inp-wrap">-->
+<!--                    <label id="label-lic">Лицензия детского сада</label>-->
+<!--                    <input type="file" name="uploader" id="uploader" placeholder="Лицензия детского сада">-->
+<!--                </div>-->
                 <div class="inp-wrap">
                     <input type="text" id="reg-sad-login" name="reg-sad-login" placeholder="Логин" />
                 </div>
@@ -54,9 +54,12 @@ header('Content-Type: text/html; charset=utf-8]')?>
                     <input type="password" id="reg-sad-repass" name="reg-sad-repass" placeholder="Повторите пароль" />
                 </div>
                 <div class="inp-wrap">
-                    <button type="submit" class="reg" id="sad-reg">Зарегистрироваться</button>
+                    <div id="er-mes"></div>
                 </div>
-            </div>
+                <div class="inp-wrap">
+                    <button type="submit" name="sad-reg" class="reg" id="sad-reg">Зарегистрироваться</button>
+                </div>
+            </form>
 
             <div id="parent-choice" class="hidden">
                 <div class="inp-wrap">
