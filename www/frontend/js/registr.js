@@ -36,7 +36,7 @@
                     sad_repass: sad_repass
                 }),
                 success: function(data){
-                    if(data == "1"){alert("Регистрация прошла успешно!");document.location.href = "../sad_page.php";}
+                    if(data == "1"){alert("Регистрация прошла успешно!");document.location.href = "../kindergarten.php";}
                     if(data == "0") alert("Такой логин уже существует!");
                     if(data == "-1") alert("Пароли не совпадают!");
                 },
