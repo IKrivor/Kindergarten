@@ -1,5 +1,6 @@
 (function ($) {
     $(document).ready(function () {
+        //Изменение вида регистрации
         $("select").change(function(){
             if($(this).val() == "Представитель детского сада"){
                 $('#kinder-choice').removeClass("hidden");
@@ -13,6 +14,7 @@
             }
         });
 
+        //Регистрация сада
         $('body').on('click', '#sad-reg', function(e){
             e.preventDefault();
 
@@ -46,6 +48,7 @@
             })
         });
 
+        //Регистрация родителя
         $('body').on('click', '#par-reg', function(e){
             e.preventDefault();
 

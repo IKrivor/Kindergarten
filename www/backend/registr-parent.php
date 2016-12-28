@@ -1,6 +1,7 @@
 <?php
 require_once "functions/connectDB.php";
 
+//Добавление нового родителя в БД
 function addParent($lname, $fname, $patr, $login, $pass){
     global $mysqli;
     connectDB();

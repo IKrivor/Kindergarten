@@ -1,6 +1,7 @@
 <?php
 require_once "functions/connectDB.php";
 
+//Добавление нового сада в БД
 function addSad($name, $address, $tel, $login, $pass){
     global $mysqli;
     connectDB();
