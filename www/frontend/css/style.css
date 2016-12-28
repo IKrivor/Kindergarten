@@ -6,6 +6,33 @@ body {
     height: 75px;
     background-color: #36c7d0;
 }
+.logo img {
+    width: 75%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 1em;
+}
+.mail-in-right-side {
+    display: inline-block;
+    float: right;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+.mail-in-right-side img, p, .logo {
+    display: inline-block;
+}
+.mail-in-right-side p a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.mail-in-right-side img {
+    width: 30px;
+}
+.mail-in-right-side p {
+    margin: 0;
+    vertical-align: top;
+}
 .row.main-place {
     height: 500px;
     background: url(../img/main.png);
@@ -96,12 +123,12 @@ div#registr-place {
 input#reg-sad-tel {
     margin-top: -4px;
 }
-input#uploader {
+input#uploader, input#uploader-pass {
     width: 370px;
     float: right;
     padding-top: 3px;
 }
-label#label-lic {
+label#label-lic, label#label-pass {
     font-weight: normal;
     float: left;
     font-size: 15px;
@@ -168,7 +195,7 @@ img#img_no {
     width: 70px;
     margin-top: 59px;
 }
-input#uploader-main-photo {
+input#uploader-main-photo, input#uploader-pass {
     width: 80%;
     float: right;
     padding-top: 3px;
@@ -192,6 +219,7 @@ table {
     background-color: transparent;
     width: calc(100% - 30px);
     margin: 0 auto;
+    border: 1px solid #dcd6d6;
 }
 
 /* Группы */
@@ -202,7 +230,7 @@ input[type="checkbox"] + label span {
     display:inline-block;
     width:26px;
     height:26px;
-    margin:-1px 4px 0 0;
+    margin: 6px 4px 0 0;
     vertical-align:middle;
     background:url(../img/checkbox.png) left top no-repeat;
     cursor:pointer;
@@ -210,22 +238,90 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background:url(../img/checkbox.png) -26px top no-repeat;
 }
-th.t-gr-name {
+th.t-gr-name, th.t-kid-name {
     text-align: center;
 }
-td.t-gr, td.t-waiting {
+td.t-gr, td.t-kid, td.t-waiting, td.t-zayavky, td.t-join-group {
     text-align: center;
 }
 table#table-groups {
     width: 59%;
     margin: 0 0 0 15px;
 }
-th.t-gr-name, th.t-waiting-name {
+th.t-gr-name, th.t-kid-name, th.t-waiting-name, th.t-zayavky-name, th.t-join-group-name {
     text-align: center;
     font-size: 16px;
     font-weight: normal;
     padding-bottom: 10px;
+    width: 176px;
+    background-color: rgba(54, 199, 208, 0.2);
 }
 .t-num{
     cursor: pointer;
+}
+.parents-inputs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#table-groups {
+    width: 96%;
+    margin: 0 0 0 15px;
+}
+.t-gr img, .t-kid img {
+    width: 12%;
+}
+#zayavky-container{
+    padding-top: 15px;
+}
+.sads-category-title-and-poster, .sads-category-data,
+.sads-single-title-and-poster, .sads-single-data {
+    display: inline-block;
+}
+.sads-category-title, .sads-single-title {
+    text-align: center;
+}
+.sads-category-adress-title, .sads-category-time-work-title, .sads-single-contacts-title,
+.sads-single-adress-title, .sads-single-time-work-title, .sads-single-contacts-title{
+    font-weight: bold;
+}
+.sads-category-data, .sads-single-data {
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: initial;
+}
+#sads-category-container{
+    text-align: center;
+}
+table#table-groups {
+    width: 54%;
+}
+#sads-single-container {
+    padding-top: 20px;
+}
+.col-md-6.description {
+    padding-top: 20px;
+    text-align: justify;
+}
+#sads-single-join-group-container {
+    padding-top: 20px;
+}
+.t-join-group {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+button#join-group {
+    width: 130px;
+    border-radius: 4px;
+    border: 1px solid #afa4a4;
+    padding-left: 7px;
+    height: 30px;
+    background-color: #a7ec49;
+}
+td.t-join-group {
+    width: 24%;
+}
+table#table-join-group {
+    border: 1px solid #a09e9e;
 }
