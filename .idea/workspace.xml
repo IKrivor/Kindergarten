@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/backend/classes/Father.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/backend/classes/Kindergarten.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/backend/classes/License.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/backend/classes/Passport.php" afterPath="" />
-    </list>
+    <list default="true" id="27f38715-3587-4d58-80b7-0a44c53c94e9" name="Default" comment="" />
     <ignored path="Kindergarten.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -300,7 +295,7 @@
       <workItem from="1482796692675" duration="16416000" />
       <workItem from="1482822845254" duration="630000" />
       <workItem from="1482823747629" duration="4378000" />
-      <workItem from="1482939293489" duration="2944000" />
+      <workItem from="1482939293489" duration="3051000" />
     </task>
     <servers />
   </component>
@@ -310,7 +305,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62593000" />
+    <option name="totallyTimeSpent" value="62700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1382" height="728" extended-state="0" />
