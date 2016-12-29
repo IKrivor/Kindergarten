@@ -18,7 +18,11 @@ header('Content-Type: text/html; charset=utf-8]')?>
 </head>
 <body>
 <div class="container">
-    <div class="row top-place"></div>
+    <div class="row top-place">
+        <div class="logo">
+            <img src="frontend/img/logo.png">
+        </div>
+    </div>
     <div class="row">
         <div class="main-title">Регистрация</div>
         <div class="title">Кто Вы?</div>
