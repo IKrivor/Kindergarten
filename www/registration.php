@@ -19,9 +19,11 @@ header('Content-Type: text/html; charset=utf-8]')?>
 <body>
 <div class="container">
     <div class="row top-place">
-        <div class="logo">
-            <img src="frontend/img/logo.png">
-        </div>
+        <a href="/">
+            <div class="logo">
+                <img src="frontend/img/logo.png">
+            </div>
+        </a>
         <div class="mail-in-right-side">
             <img src="frontend/img/mail.png">
             <p><a href="mailto:support@detskiesady.ru">support@detskiesady.ru</a></p>
