@@ -308,6 +308,32 @@ var parentID;
                 }
             })
         });
+
+        //Удаление ребенка
+        $('body').on('click', '#remove-kid', function(e){
+            e.preventDefault();
+            var chID = $(this).parents('#group-list').find('.t-kid input[type="checkbox"]:checked').attr('id');
+            if(oneItemCheck()){
+                if(confirm("Вы уверены, что хотите удалить этого ребенка?")){
+                    $.ajax({
+                        url: "./backend/remove_child.php",
+                        type:'POST',
+                        data: ({ch_id: chID}),
+                        success: function(data){
+                            if(data == "1"){
+                                alert("Ребенок успешно удален!");
+                                clearContainer();
+                                createChildrenPage();
+                            } else alert("Er");
+
+                        },
+                        error: function (data) {
+                            alert("Error!");
+                        }
+                    });
+                }
+            }
+        });
     });
 
 }(jQuery));
