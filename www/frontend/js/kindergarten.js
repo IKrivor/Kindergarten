@@ -311,6 +311,7 @@ var sadID;
             }
         });
 
+        //Обновление данных о саде
         $('body').on('click', '#sad_save', function(e){
             e.preventDefault();
 

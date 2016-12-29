@@ -59,8 +59,47 @@ var parentID;
 
         }
 
-        createInfoPage();
+        //Очищает контейрнер
+        function clearContainer() {
+            $('#parent-container').html("");
+        }
 
+        //Обновление данных о родителе
+        $('body').on('click', '#par_save', function(e){
+            e.preventDefault();
+
+            var par_id = getCookie("parID");
+            var parents_fam = document.getElementById("parents-fam").value;
+            var parents_name = document.getElementById("parents-name").value;
+            var parents_otch = document.getElementById("parents-otch").value;
+            var parents_tel = document.getElementById("parents-tel").value;
+            var parents_mail = document.getElementById("parents-mail").value;
+
+            $.ajax({
+                type: 'POST',
+                url: "./backend/update_par.php",
+                data: ({
+                    par_id: par_id,
+                    parents_fam: parents_fam,
+                    parents_name: parents_name,
+                    parents_otch: parents_otch,
+                    parents_tel: parents_tel,
+                    parents_mail: parents_mail
+                }),
+                success: function(data){
+                    if(data == "1"){
+                        alert("Данные успешно обновлены!");
+                        clearContainer();
+                        createInfoPage();
+                    } else alert("Error");
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            })
+        });
+        
+        createInfoPage();      
     });
 
 }(jQuery));
