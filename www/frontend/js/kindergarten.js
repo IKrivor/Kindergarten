@@ -16,12 +16,8 @@ var sadID;
                     var print = '<div class="row">';
                             print += '<div class="dashed-place">';
                                 print += '<div class="title">Основная информация</div>';
-                                    print += '<div class="col-md-4">';
-                                        print += '<div id="no_img">';
-                                            print += '<img src="frontend/img/photo-camera.png" id="img_no"/>';
-                                        print += '</div>';
-                                    print += '</div>';
-                                print += '<div class="col-md-8">';
+
+                                print += '<div class="gr-form">';
                                     print += '<div class="inp-wrap">';
                                         print += '<input type="text" id="sad-name" name="sad-name" placeholder="Название детского сада" />';
                                     print += '</div>';
@@ -42,25 +38,25 @@ var sadID;
                                         print += '<button id="sad_save">Сохранить</button>';
                                     print += '</div>';
 
-                                    print += '<div class="inp-wrap">';
-                                        print += '<label id="label-lic">Главное фото</label>';
-                                        print += '<input type="file" name="uploader-main-photo" id="uploader-main-photo" placeholder="Главное фото детского сада">';
-                                    print += '</div>';
-                                print += '</div>';
-                            print += '</div>';
-                        print += '</div>';
-                        print += '<div class="row">';
-                            print += '<div class="dashed-place">';
-                                print += '<div class="title">Галерея</div>';
-                                    print += '<div id="choice-photo">';
-                                        print += '<div class="inp-wrap">';
-                                        print += '<label id="label-lic">Добавить фото</label>';
-                                        print += '<button id="load-photo">Загрузить</button>';
-                                        print += '<input type="file" name="uploader-photo" id="uploader-photo" placeholder="Фото детского сада">';
-                                    print += '</div>';
-                                print += '</div>';
-                            print += '</div>';
-                        print += '</div>';
+                        //             print += '<div class="inp-wrap">';
+                        //                 print += '<label id="label-lic">Главное фото</label>';
+                        //                 print += '<input type="file" name="uploader-main-photo" id="uploader-main-photo" placeholder="Главное фото детского сада">';
+                        //             print += '</div>';
+                        //         print += '</div>';
+                        //     print += '</div>';
+                        // print += '</div>';
+                        // print += '<div class="row">';
+                        //     print += '<div class="dashed-place">';
+                        //         print += '<div class="title">Галерея</div>';
+                        //             print += '<div id="choice-photo">';
+                        //                 print += '<div class="inp-wrap">';
+                        //                 print += '<label id="label-lic">Добавить фото</label>';
+                        //                 print += '<button id="load-photo">Загрузить</button>';
+                        //                 print += '<input type="file" name="uploader-photo" id="uploader-photo" placeholder="Фото детского сада">';
+                        //             print += '</div>';
+                        //         print += '</div>';
+                        //     print += '</div>';
+                        // print += '</div>';
                     $('#sad-container').append(print);
 
                     $('#sad-name').val(data.kin_name);
@@ -313,6 +309,40 @@ var sadID;
                     });
                 }
             }
+        });
+
+        $('body').on('click', '#sad_save', function(e){
+            e.preventDefault();
+
+            var sad_id = getCookie("sadID");
+            var sad_name = document.getElementById("sad-name").value;
+            var sad_address = document.getElementById("sad-address").value;
+            var sad_tel = document.getElementById("sad-tel").value;
+            var sad_regim = document.getElementById("sad-regim").value;
+            var sad_description = document.getElementById("sad-description").value;
+
+            $.ajax({
+                type: 'POST',
+                url: "./backend/update_sad.php",
+                data: ({
+                    sad_id: sad_id,
+                    sad_name: sad_name,
+                    sad_address: sad_address,
+                    sad_tel: sad_tel,
+                    sad_regim: sad_regim,
+                    sad_description: sad_description
+                }),
+                success: function(data){
+                    if(data == "1"){
+                        alert("Данные успешно обновлены!");
+                        clearContainer();
+                        createInfoPage();
+                    } else alert("Error");
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            })
         });
 
         createInfoPage();
