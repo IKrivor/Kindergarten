@@ -59,6 +59,18 @@ var parentID;
 
         }
 
+        function oneItemCheck(){
+            var checkCount = 0;
+            $('table input[type="checkbox"]').each(function(){
+                if($(this).is(':checked')){
+                    checkCount = checkCount + 1;
+                }
+            });
+            if(checkCount == 0){alert('Пожалуйста, выберите пункт.'); return false;}
+            if(checkCount == 1){return true;}
+            if(checkCount >= 1){alert('Пожалуйста, выберите один пункт.'); return false;}
+        }
+
         //Загружает страницу "Дети"
         function createChildrenPage() {
             $.ajax({
@@ -95,7 +107,7 @@ var parentID;
                     for(var i = 0; i < data.length; i++){
                         var print2 = '';
                         print2 += '<tr>';
-                        print2 += '<td class="t-kid"><input id="' + data[i].ch_id + '" type="checkbox" class="user-checkbox"><label for="ch_id"><span></span></label></td>';
+                        print2 += '<td class="t-kid"><input id="' + data[i].ch_id + '" type="checkbox" class="user-checkbox"><label for="' + data[i].ch_id + '"><span></span></label></td>';
                         print2 += '<td class="t-kid t-num">' + data[i].ch_lastName + " " + data[i].ch_firstName +  " " + data[i].ch_patronymic +  '</td>';
                         print2 += '<td class="t-kid">' + data[i].ch_birthDate + '</td>';
                         // print2 += '<td class="t-kid"><img src="../img/tick.png"></td>';
@@ -111,6 +123,55 @@ var parentID;
                     alert("Error!");
                 }
             });
+        }
+
+        //Загружает форму ребенка
+        function createChildForm(childID) {
+
+            var print = '<div class="row">';
+            if(childID == null) print += '<div class="title">Добавление ребенка</div>';
+            else print += '<div class="title">Редактирование ребенка</div>';
+            print += '<div class="gr-form">';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="ch_fam" name="ch_fam" required placeholder="Фамилия" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="ch_name" name="ch_name" required placeholder="Имя" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="ch_otch" name="ch_otch" required placeholder="Отчество" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="date" id="date_b" name="date_b" required placeholder="Дата рождения" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            if(childID == null) print += '<button id="ch_save">Сохранить</button>';
+            else print += '<button id="ch_update">Сохранить</button>';
+            print += '</div>';
+            print += '</div>';
+            print += '</div>';
+            $('#parent-container').append(print);
+            
+            $.ajax({
+                type: 'POST',
+                url: "../backend/get_child_info.php",
+                dataType:"json",
+                data: ({id: childID}),
+                success: function(data){
+
+                    $('#ch_fam').val(data.ch_lastName);
+                    $('#ch_name').val(data.ch_firstName);
+                    $('#ch_otch').val(data.ch_patronymic);
+                    $('#date_b').val(data.ch_birthDate);
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            });
+
+
+
+
         }
 
         //Очищает контейрнер
@@ -167,6 +228,85 @@ var parentID;
             e.preventDefault();
             clearContainer();
             createChildrenPage();
+        });
+
+        //Добавление ребенка
+        $('body').on('click', '#add-kid', function(e){
+            e.preventDefault();
+            clearContainer();
+            createChildForm();
+        });
+        $('body').on('click', '#ch_save', function(e){
+            e.preventDefault();
+            var ch_fam = document.getElementById("ch_fam").value;
+            var ch_name = document.getElementById("ch_name").value;
+            var ch_otch = document.getElementById("ch_otch").value;
+            var date_b = document.getElementById("date_b").value;
+            var cl_par_id = getCookie("parID");
+
+            $.ajax({
+                type: 'POST',
+                url: "./backend/add_child.php",
+                data: ({
+                    ch_fam: ch_fam,
+                    ch_name: ch_name,
+                    ch_otch: ch_otch,
+                    date_b: date_b,
+                    cl_par_id: cl_par_id
+                }),
+                success: function(data){
+                    if(data == "1"){
+                        alert("Ребенок успешно добавлен!");
+                        clearContainer();
+                        createChildrenPage();
+                    } else alert("Error");
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            })
+        });
+
+        //Редактирование ребенка
+        $('body').on('click', '#update-kid', function(e){
+            e.preventDefault();
+            var chID = $(this).parents('#group-list').find('.t-kid input[type="checkbox"]:checked').attr('id');
+            setCookie("chID", chID);
+            if(oneItemCheck()){
+                clearContainer();
+                createChildForm(chID);
+            }
+        });
+        $('body').on('click', '#ch_update', function(e){
+            e.preventDefault();
+
+            var ch_id = getCookie("chID");
+            var ch_fam = document.getElementById("ch_fam").value;
+            var ch_name = document.getElementById("ch_name").value;
+            var ch_otch = document.getElementById("ch_otch").value;
+            var date_b = document.getElementById("date_b").value;
+
+            $.ajax({
+                type: 'POST',
+                url: "./backend/update_child.php",
+                data: ({
+                    ch_id: ch_id,
+                    ch_fam: ch_fam,
+                    ch_name: ch_name,
+                    ch_otch: ch_otch,
+                    date_b: date_b
+                }),
+                success: function(data){
+                    if(data == "1"){
+                        alert("Информация о ребенке успешно обновлена!");
+                        clearContainer();
+                        createChildrenPage();
+                    } else alert("Error");
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            })
         });
     });
 

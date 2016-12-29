@@ -129,38 +129,39 @@ var sadID;
         //Загружает форму группы
         function createGroupForm(groupID) {
 
+            var print = '<div class="row">';
+            if(groupID == null) print += '<div class="title">Добавление группы</div>';
+            else print += '<div class="title">Редактирование группы</div>';
+            print += '<div class="gr-form">';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="gr-number" name="gr-number" required placeholder="Номер группы" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<textarea id="gr-age-limit" name="gr-age-limit" required placeholder="Возрастные ограничения"></textarea>';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="gr-kolvo-mest" name="gr-kolvo-mest" required placeholder="Количество мест" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="gr-kolvo-free-mest" name="gr-kolvo-free-mest" required placeholder="Количество свободных мест" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            print += '<input type="text" id="gr-price" name="gr-price" required placeholder="Стоимость в год" />';
+            print += '</div>';
+            print += '<div class="inp-wrap">';
+            if(groupID == null) print += '<button id="gr_save">Сохранить</button>';
+            else print += '<button id="gr_update">Сохранить</button>';
+            print += '</div>';
+            print += '</div>';
+            print += '</div>';
+            $('#sad-container').append(print);
+
             $.ajax({
                 type: 'POST',
                 url: "../backend/get_group_info.php",
                 dataType:"json",
                 data: ({id: getCookie("grID")}),
                 success: function(data){
-                    var print = '<div class="row">';
-                    if(groupID == null) print += '<div class="title">Добавление группы</div>';
-                    else print += '<div class="title">Редактирование группы</div>';
-                    print += '<div class="gr-form">';
-                    print += '<div class="inp-wrap">';
-                    print += '<input type="text" id="gr-number" name="gr-number" required placeholder="Номер группы" />';
-                    print += '</div>';
-                    print += '<div class="inp-wrap">';
-                    print += '<textarea id="gr-age-limit" name="gr-age-limit" required placeholder="Возрастные ограничения"></textarea>';
-                    print += '</div>';
-                    print += '<div class="inp-wrap">';
-                    print += '<input type="text" id="gr-kolvo-mest" name="gr-kolvo-mest" required placeholder="Количество мест" />';
-                    print += '</div>';
-                    print += '<div class="inp-wrap">';
-                    print += '<input type="text" id="gr-kolvo-free-mest" name="gr-kolvo-free-mest" required placeholder="Количество свободных мест" />';
-                    print += '</div>';
-                    print += '<div class="inp-wrap">';
-                    print += '<input type="text" id="gr-price" name="gr-price" required placeholder="Стоимость в год" />';
-                    print += '</div>';
-                    print += '<div class="inp-wrap">';
-                    if(groupID == null) print += '<button id="gr_save">Сохранить</button>';
-                    else print += '<button id="gr_update">Сохранить</button>';
-                    print += '</div>';
-                    print += '</div>';
-                    print += '</div>';
-                    $('#sad-container').append(print);
 
                     $('#gr-number').val(data.gr_number);
                     $('#gr-age-limit').val(data.gr_ageLimit);

@@ -329,7 +329,7 @@ table#table-join-group {
     border: 1px solid #a09e9e;
 }
 
-button#sad_save, #gr_save, #gr_update, #par_save {
+button#sad_save, #gr_save, #gr_update, #par_save, #ch_save, #ch_update {
     width: 100px;
     background-color: #a7ec49;
 }
