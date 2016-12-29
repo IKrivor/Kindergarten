@@ -289,6 +289,32 @@ var sadID;
             })
         });
 
+        //Удаление группы
+        $('body').on('click', '#remove-group', function(e){
+            e.preventDefault();
+            var grID = $(this).parents('#group-list').find('.t-gr input[type="checkbox"]:checked').attr('id');
+            if(oneItemCheck()){
+                if(confirm("Вы уверены, что хотите удалить эту группу?")){
+                    $.ajax({
+                        url: "./backend/remove_group.php",
+                        type:'POST',
+                        data: ({gr_id: grID}),
+                        success: function(data){
+                            if(data == "1"){
+                                alert("Группа успешно удалена!");
+                                clearContainer();
+                                createGroupPage();
+                            } else alert("Er");
+                            
+                        },
+                        error: function (data) {
+                            alert("Error!");                            
+                        }
+                    });
+                }
+            }
+        });
+
         createInfoPage();
 
     });
