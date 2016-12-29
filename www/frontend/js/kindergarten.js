@@ -79,39 +79,50 @@ var sadID;
 
         //Загружает страницу "Группы"
         function createGroupPage() {
+            $.ajax({
+                type: 'POST',
+                url: "../backend/get_groups.php",
+                dataType: "json",
+                data: ({query: 1}),
+                success: function(data){
 
-            var print = '<div class="row">';
-                print += '<div class="button-place">';
-                    print += '<button id="add-group" class="add-but">Добавить</button>';
-                    print += '<button id="update-group" class="update-but">Редактировать</button>';
-                    print += '<button id="remove-group" class="remove-but">Удалить</button>';
-                print += '</div>';
-                print += '<table id="table-groups">';
-                    print += '<thead>';
-                        print += '<tr>';
-                            print += '<th></th>';
-                            print += '<th class="t-gr-name">Номер группы</th>';
-                            print += '<th class="t-gr-name">Количество свободных мест</th>';
-                            print += '<th class="t-gr-name">Количество занятых мест</th>';
-                        print += '</tr>';
-                    print += '</thead>';
-                    print += '<tbody>';
-                        print += '<tr>';
-                            print += '<td class="t-gr"><input id="gr1" type="checkbox" class="user-checkbox"><label for="gr1"><span></span></label></td>';
-                            print += '<td class="t-gr t-num">1</td>';
-                            print += '<td class="t-gr">10</td>';
-                            print += '<td class="t-gr">5</td>';
-                            print += '</tr>';
-                        print += '<tr>';
-                            print += '<td class="t-gr"><input id="gr2" type="checkbox" class="user-checkbox"><label for="gr2"><span></span></label></td>';
-                            print += '<td class="t-gr t-num">2</td>';
-                            print += '<td class="t-gr">12</td>';
-                            print += '<td class="t-gr">3</td>';
-                        print += '</tr>';
-                    print += '</tbody>';
-                print += '</table>';
-                print += '</div>';
-            $('#sad-container').append(print);
+                    var print = '<div class="row" id="group-list">';
+                        print += '<div class="button-place">';
+                            print += '<button id="add-group" class="add-but">Добавить</button>';
+                            print += '<button id="update-group" class="update-but">Редактировать</button>';
+                            print += '<button id="remove-group" class="remove-but">Удалить</button>';
+                        print += '</div>';
+                        print += '<table id="table-groups">';
+                            print += '<thead>';
+                                print += '<tr>';
+                                    print += '<th></th>';
+                                    print += '<th class="t-gr-name">Номер группы</th>';
+                                    print += '<th class="t-gr-name">Количество свободных мест</th>';
+                                    print += '<th class="t-gr-name">Количество занятых мест</th>';
+                                print += '</tr>';
+                            print += '</thead>';
+                            print += '<tbody>';
+                            print += '</tbody>';
+                        print += '</table>';
+                        print += '</div>';
+                    $('#sad-container').append(print);
+
+                    for(var i = 0; i < data.length; i++){
+                        var print2 = '';
+                        print2 += '<tr>';
+                        print2 += '<td class="t-gr"><input id="' + data[i].gr_id + '" type="checkbox" class="user-checkbox"><label for="' + data[i].gr_id + '"><span></span></label></td>';
+                        print2 += '<td class="t-gr t-num">' + data[i].gr_number + '</td>';
+                        print2 += '<td class="t-gr">' + data[i].gr_seatsNumber + '</td>';
+                        print2 += '<td class="t-gr">' + data[i].gr_freeSeatsNumber + '</td>';
+                        print2 += '</tr>';
+                        $('#table-groups tbody').append(print2);
+                    }
+
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            });
         }
 
         //Очищает контейрнер
@@ -121,32 +132,66 @@ var sadID;
 
         //Загружает форму группы
         function createGroupForm(groupID) {
-            var print = '<div class="row">';
-            if(groupID == null) print += '<div class="title">Добавление группы</div>';
-            else print += '<div class="title">Редактирование группы</div>';
-                print += '<div class="gr-form">';
-                print += '<div class="inp-wrap">';
-                print += '<input type="text" id="gr-number" name="gr-number" required placeholder="Номер группы" />';
-                print += '</div>';
-                print += '<div class="inp-wrap">';
-                print += '<textarea id="gr-age-limit" name="gr-age-limit" required placeholder="Возрастные ограничения"></textarea>';
-                print += '</div>';
-                print += '<div class="inp-wrap">';
-                print += '<input type="text" id="gr-kolvo-mest" name="gr-kolvo-mest" required placeholder="Количество мест" />';
-                print += '</div>';
-                print += '<div class="inp-wrap">';
-                print += '<input type="text" id="gr-kolvo-free-mest" name="gr-kolvo-free-mest" required placeholder="Количество свободных мест" />';
-                print += '</div>';
-                print += '<div class="inp-wrap">';
-                print += '<input type="text" id="gr-price" name="gr-price" required placeholder="Стоимость в год" />';
-                print += '</div>';
-                print += '<div class="inp-wrap">';
-            if(groupID == null) print += '<button id="gr_save">Сохранить</button>';
-            else print += '<button id="gr_update">Сохранить</button>';
-                print += '</div>';
-                print += '</div>';
-                print += '</div>';
-            $('#sad-container').append(print);
+
+            $.ajax({
+                type: 'POST',
+                url: "../backend/get_group_info.php",
+                dataType:"json",
+                data: ({id: getCookie("grID")}),
+                success: function(data){
+                    var print = '<div class="row">';
+                    if(groupID == null) print += '<div class="title">Добавление группы</div>';
+                    else print += '<div class="title">Редактирование группы</div>';
+                    print += '<div class="gr-form">';
+                    print += '<div class="inp-wrap">';
+                    print += '<input type="text" id="gr-number" name="gr-number" required placeholder="Номер группы" />';
+                    print += '</div>';
+                    print += '<div class="inp-wrap">';
+                    print += '<textarea id="gr-age-limit" name="gr-age-limit" required placeholder="Возрастные ограничения"></textarea>';
+                    print += '</div>';
+                    print += '<div class="inp-wrap">';
+                    print += '<input type="text" id="gr-kolvo-mest" name="gr-kolvo-mest" required placeholder="Количество мест" />';
+                    print += '</div>';
+                    print += '<div class="inp-wrap">';
+                    print += '<input type="text" id="gr-kolvo-free-mest" name="gr-kolvo-free-mest" required placeholder="Количество свободных мест" />';
+                    print += '</div>';
+                    print += '<div class="inp-wrap">';
+                    print += '<input type="text" id="gr-price" name="gr-price" required placeholder="Стоимость в год" />';
+                    print += '</div>';
+                    print += '<div class="inp-wrap">';
+                    if(groupID == null) print += '<button id="gr_save">Сохранить</button>';
+                    else print += '<button id="gr_update">Сохранить</button>';
+                    print += '</div>';
+                    print += '</div>';
+                    print += '</div>';
+                    $('#sad-container').append(print);
+
+                    $('#gr-number').val(data.gr_number);
+                    $('#gr-age-limit').val(data.gr_ageLimit);
+                    $('#gr-kolvo-mest').val(data.gr_seatsNumber);
+                    $('#gr-kolvo-free-mest').val(data.gr_freeSeatsNumber);
+                    $('#gr-price').val(data.gr_yearPrice);
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            });
+            
+            
+            
+            
+        }
+
+        function oneItemCheck(){
+            var checkCount = 0;
+            $('table input[type="checkbox"]').each(function(){
+                if($(this).is(':checked')){
+                    checkCount = checkCount + 1;
+                }
+            });
+            if(checkCount == 0){alert('Пожалуйста, выберите пункт.'); return false;}
+            if(checkCount == 1){return true;}
+            if(checkCount >= 1){alert('Пожалуйста, выберите один пункт.'); return false;}
         }
 
         $('body').on('click', '#groups-menu', function(e){
@@ -188,7 +233,7 @@ var sadID;
                     gr_sad_id: gr_sad_id
                 }),
                 success: function(data){
-                    if(data == "0"){
+                    if(data == "1"){
                         alert("Группа успешно создана!");
                         clearContainer();
                         createGroupPage();
@@ -203,8 +248,45 @@ var sadID;
         //Редактирование группы
         $('body').on('click', '#update-group', function(e){
             e.preventDefault();
-            clearContainer();
-            createGroupForm(1);
+            var grID = $(this).parents('#group-list').find('.t-gr input[type="checkbox"]:checked').attr('id');
+            setCookie("grID", grID);
+            if(oneItemCheck()){
+                clearContainer();
+                createGroupForm(grID);
+            }
+        });
+        $('body').on('click', '#gr_update', function(e){
+            e.preventDefault();
+
+            var gr_id = getCookie("grID");
+            var gr_number = document.getElementById("gr-number").value;
+            var gr_age_limit = document.getElementById("gr-age-limit").value;
+            var gr_kolvo_mest = document.getElementById("gr-kolvo-mest").value;
+            var gr_kolvo_free_mest = document.getElementById("gr-kolvo-free-mest").value;
+            var gr_price = document.getElementById("gr-price").value;
+
+            $.ajax({
+                type: 'POST',
+                url: "./backend/update_group.php",
+                data: ({
+                    gr_id: gr_id,
+                    gr_number: gr_number,
+                    gr_age_limit: gr_age_limit,
+                    gr_kolvo_mest: gr_kolvo_mest,
+                    gr_kolvo_free_mest: gr_kolvo_free_mest,
+                    gr_price: gr_price
+                }),
+                success: function(data){
+                    if(data == "1"){
+                        alert("Группа успешно обновлена!");
+                        clearContainer();
+                        createGroupPage();
+                    } else alert("Error");
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            })
         });
 
         createInfoPage();
