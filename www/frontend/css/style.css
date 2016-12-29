@@ -338,3 +338,8 @@ button#sad_save, #gr_save, #gr_update, #par_save {
     width: 60%;
     margin: 0 auto;
 }
+
+table#table-kids {
+    width: 36%;
+    margin-left: 15px;
+}

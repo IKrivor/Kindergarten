@@ -59,6 +59,60 @@ var parentID;
 
         }
 
+        //Загружает страницу "Дети"
+        function createChildrenPage() {
+            $.ajax({
+                type: 'POST',
+                url: "../backend/get_children.php",
+                dataType: "json",
+                data: ({query: 1}),
+                success: function(data){
+
+                    var print = '<div class="row" id="group-list">';
+                            print += '<div class="button-place">';
+                                print += '<button id="add-kid" class="add-but">Добавить</button>';
+                                print += '<button id="update-kid" class="update-but">Редактировать</button>';
+                                print += '<button id="remove-kid" class="remove-but">Удалить</button>';
+                            print += '</div>';
+                            print += '<table id="table-kids">';
+                                print += '<thead>';
+                                    print += '<tr>';
+                                        print += '<th></th>';
+                                        print += '<th class="t-kid-name">ФИО</th>';
+                                        print += '<th class="t-kid-name">Дата рождения</th>';
+                                        // print += '<th class="t-kid-name">Свидетельство о рождении</th>';
+                                        // print += '<th class="t-kid-name">Страховой медицинский полис</th>';
+                                        // print += '<th class="t-kid-name">Справка о здоровье</th>';
+                                        // print += '<th class="t-kid-name">Сертификат прививок</th>';
+                                    print += '</tr>';
+                                print += '</thead>';
+                                print += '<tbody>';
+                                print += '</tbody>';
+                            print += '</table>';
+                        print += '</div>';
+                    $('#parent-container').append(print);
+
+                    for(var i = 0; i < data.length; i++){
+                        var print2 = '';
+                        print2 += '<tr>';
+                        print2 += '<td class="t-kid"><input id="' + data[i].ch_id + '" type="checkbox" class="user-checkbox"><label for="ch_id"><span></span></label></td>';
+                        print2 += '<td class="t-kid t-num">' + data[i].ch_lastName + " " + data[i].ch_firstName +  " " + data[i].ch_patronymic +  '</td>';
+                        print2 += '<td class="t-kid">' + data[i].ch_birthDate + '</td>';
+                        // print2 += '<td class="t-kid"><img src="../img/tick.png"></td>';
+                        // print2 += '<td class="t-kid"><img src="../img/tick.png"></td>';
+                        // print2 += '<td class="t-kid"><img src="../img/tick.png"></td>';
+                        // print2 += '<td class="t-kid"><img src="../img/tick.png"></td>';
+                        print2 += '</tr>';
+                        $('#table-kids tbody').append(print2);
+                    }
+
+                },
+                error: function (data) {
+                    alert("Error!");
+                }
+            });
+        }
+
         //Очищает контейрнер
         function clearContainer() {
             $('#parent-container').html("");
@@ -99,7 +153,21 @@ var parentID;
             })
         });
         
-        createInfoPage();      
+        createInfoPage();
+
+        //Страница "Личные данные"
+        $('body').on('click', '#info-menu', function(e){
+            e.preventDefault();
+            clearContainer();
+            createInfoPage();
+        });
+
+        //Страницы ""Дети
+        $('body').on('click', '#children-menu', function(e){
+            e.preventDefault();
+            clearContainer();
+            createChildrenPage();
+        });
     });
 
 }(jQuery));
